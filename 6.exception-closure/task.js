@@ -8,7 +8,6 @@ function parseCount(value) {
     return result;
 }
 
-parseCount();
 
 function validateCount(value) {
     try {
@@ -17,7 +16,6 @@ function validateCount(value) {
         return error;
     }
 }
-
 
 // Задача 2. Треугольник 
 
@@ -41,7 +39,7 @@ class Triangle {
     get area() {
         let p = this.perimeter / 2;
         let area = Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c));
-        return area.toFixed(3);
+        return Number(area.toFixed(3));
     }
 
 }
